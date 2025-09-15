@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./stylesheet.css">
+</head>
+<body>
+  <input type="checkbox" id="theme-toggle" hidden>
+  <div class="page">
+
+  <!-- ....................Start Nav Bar.................... -->
+  <nav>
+    <div class="container nav-container">
+      <a href="#" class="logo"><b>ADRIAN LABADIA</b></a>
+      <ul class="nav-links">
+        <li><a href="#About">About</a></li>
+        <li><a href="#Experiences">Experience</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
+        <li><label for="theme-toggle" id="themeToggleLink">Dark Mode</label></li>
+      </ul> 
+    </div>
+  </nav>
+  <!-- ....................End Nav Bar.................... -->
+
+  
+  <!-- ....................Start Header Section.................... -->
+  <header>
+    <div class="container header-container">
+      <div class="header-left">
+        <img src="./img/profile.png" alt="">  
+      </div>
+      <div class="header-right">
+        <p><b>Hello there! I'm</b></p>
+        <h1>Adrian Labadia</h1>
+        <h2>Game Developer</h2>
+        <div class="header-action-aria">
+          <a href="img/resume.pdf" class="btn" target="_blank">Resume</a>       
+          <a href="#Contact" class="btn btn-dark">Contact Info</a>              
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- ....................End Header Section.................... -->
+
+
+  <!-- ....................Start About Section.................... -->
+  <section id="About">
+    <p class="heading-p"></p>
+    <h1 class="heading">About Me</h1>
+    <div class="container about-container">
+      <div class="about-left">
+        <img src="./img/profile22.png" alt="">
+      </div>
+      <div class="about-right">
+        <div class="basic-edu">
+          <div class="edu-box">
+            <img src="./img/experience.png" class="icon1">
+            <h4>Experience</h4>
+            <p>
+              4 years <br>
+              Game Development              
+            </p>
+          </div>
+          <div class="edu-box">
+            <img src="./img/education.png" class="icon1">
+            <h4>Education</h4>
+            <p>
+              Bachelors Degree <br>
+              Interactive Entertainment Major in Game Development              
+            </p>
+          </div>
+        </div>
+        <p id="aboutDescription">
+          I bring a strong blend of creative vision and technical expertise to the
+          table. With 4 years of experience, I am deeply passionate about the world
+          of gaming and am driven by the desire to create engaging and memorable
+          player experiences. My skills encompass game design, programming, and
+          problem-solving, with proficiency in tools such as Unity and C#. I have a
+          proven track record of collaborating effectively within multidisciplinary
+          teams to deliver successful game projects.
+        </p>
+        <div class="header-action-aria">
+          <button type="button" class="btn" id="aboutEditBtn">Edit</button>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <!-- ....................End About Section.................... -->
+
+
+  <!-- ....................Start Experience Section.................... -->
+  <section id="Experiences">
+    <p class="heading-p"></p>
+    <h1 class="heading">Experience</h1>
+    <div class="container experience-container">
+      <div class="experience-box">
+        <h2>Skills</h2>
+        <div class="experience">
+          <div class="ex-div">
+            <img src="./img/HtmlCss.png" class="icon1">
+            <div>
+              <h4>HTML/CSS</h4>
+              <p>Advanced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/unity.png" class="icon1">
+            <div>
+              <h4>Unity</h4>
+              <p>Advanced</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/cplus.png" class="icon1">
+            <div>
+              <h4>C++</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/js.png" class="icon1">
+            <div>
+              <h4>JavaScript</h4>
+              <p>Intermediate</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/unreal.png" class="icon1">
+            <div>
+              <h4>Unreal Engine
+              </h4>
+              <p>Basic</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/blender.png" class="icon1">
+            <div>
+              <h4>Blender</h4>
+              <p>Advanced</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="experience-box">
+        <h2>Work Experience</h2>
+        <div class="experience">
+          <div class="ex-div">
+            <img src="./img/hoyo.png" class="icon1">
+            <div>
+              <h4>Hoyoverse | Freelance Game Developer </h4>
+              <p>Server Maintenance<br> Art Direction</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/bandai.png" class="icon1">
+            <div>
+              <h4>Bandai Namco | Game Director</h4>
+              <p>Software Team Leader <br> Asset Provider</p>
+            </div>
+          </div>
+          <div class="ex-div">
+            <img src="./img/ketchup.png" class="icon1">
+            <div>
+              <h4>Ketchapp | Freelance Game Developer </h4>
+              <p>Game Designer <br> Art Direction</p>
+            </div>
+
+          </div>
+          </div>          
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ....................End Experience Section.................... -->
+
+
+  <!-- ....................Start Project Section.................... -->
+  <section id="Projects">
+    <p class="heading-p"></p>
+    <h1 class="heading">Projects</h1>
+    <div class="container project-container">
+      <div class="project">
+        <img src="./img/vtuber.png" alt="">
+        <h3>Concept Art</h3>
+        <div class="header-action-aria">
+          <a href="https://drive.google.com/drive/folders/18w8kq0uq4cW-OWMPRxtkKK00OZbUmw-1?usp=sharing" target="_blank" class="btn">View</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./img/Foorina.jpg" alt="">
+        <h3>Game Demo</h3>
+        <div class="header-action-aria">
+          <a href="https://scratch.mit.edu/projects/984247735" target="_blank" class="btn">View</a>
+        </div>
+      </div>
+      <div class="project">
+        <img src="./img/alex.png" alt="">
+        <h3>Other Projects</h3>
+        <div class="header-action-aria">
+          <a target="_blank" class="btn">View</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ....................End Project Section.................... -->
+
+
+  <!-- ....................Start Contact Section.................... -->
+  <section id="Contact">
+    <p class="heading-p"></p>
+    <h1 class="heading">Contact Me</h1>
+    <div class="contact-container container">
+      <div class="email">
+        <img src="./img/email.png" class="icon1">
+        <a href=""><h5>chronosapiensruel@gmail.com</h5></a>
+      </div>
+    </div>
+  </section>
+  <!-- ....................End Contact Section.................... -->
+
+
+  <!-- ....................Start Footer Section.................... -->
+  <footer>
+
+    <p>&copy; Additional Contacts | Phone: 09622682968 Landline: 817-0672</p>
+  </footer>
+  <!-- ....................End Footer Section.................... -->
+
+</div>
+  <script src="./script.js"></script>
+</body>
+</html>

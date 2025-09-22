@@ -6,14 +6,13 @@ document.addEventListener('DOMContentLoaded', function () {
     return;
   }
 
-  // Restore saved content if available
   try {
     var savedAbout = localStorage.getItem('aboutDescriptionHTML');
     if (savedAbout) {
       aboutParagraph.innerHTML = savedAbout;
     }
   } catch (e) {
-    // ignore storage errors (e.g., privacy mode)
+ 
   }
 
   var isEditing = false;
@@ -25,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isEditing) {
       aboutParagraph.setAttribute('contenteditable', 'true');
       aboutParagraph.focus();
-      // Place cursor at end
+
       if (document.getSelection && document.createRange) {
         var range = document.createRange();
         range.selectNodeContents(aboutParagraph);
@@ -34,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         sel.removeAllRanges();
         sel.addRange(range);
       }
-      // Save as user types
+
       var onInput = function(){
         try {
           localStorage.setItem('aboutDescriptionHTML', aboutParagraph.innerHTML);
@@ -47,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       editButton.setAttribute('aria-pressed', 'true');
     } else {
       aboutParagraph.setAttribute('contenteditable', 'false');
-      // Ensure latest value is saved and stop listening
+
       try {
         localStorage.setItem('aboutDescriptionHTML', aboutParagraph.innerHTML);
       } catch (e) {}

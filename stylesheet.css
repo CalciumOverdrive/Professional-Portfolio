@@ -164,6 +164,7 @@ nav{
   justify-content: space-between;
   align-items: center;
   height: 100%;
+  width: 100%;
 }
 .logo{
   font-size: 32px ;
@@ -174,6 +175,8 @@ nav{
   display: flex;
   align-items: center;
   gap: 2rem;
+  flex: 1;
+  justify-content: flex-end;
 }
 /* Theme toggle link appearance */
 #themeToggleLink{
@@ -373,6 +376,7 @@ footer .nav-links{
     .nav-links{
       justify-content: center;    
       width: 100%;
+      flex: none;
     }
     /*Start Experience  */
     .experience-container{
@@ -438,7 +442,7 @@ footer .nav-links{
   }
   /* .......Start Nav........*/
   .nav-links{
-    gap: 0;
+    gap: 1rem;
     justify-content: space-between;    
   }
   /* .......Start Contact........*/
@@ -540,6 +544,9 @@ header .btn.btn-dark:hover{ background: var(--btn-hover, #014421CC); }
   transition: color .4s ease, text-decoration-color .4s ease, text-underline-offset .4s ease;
   cursor: pointer;
   position: relative;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
 }
 #themeToggleLink::after{
   content: "Dark Mode";
